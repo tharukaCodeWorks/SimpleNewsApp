@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    app:cardBackgroundColor="@color/colorWhite"
+    android:clickable="true"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="12dp"
+    android:id="@+id/post_card_read"
+    android:background="?attr/selectableItemBackground"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:focusable="true"
+    tools:context=".ui.ReadNews">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="@color/colorWhite"
+        android:orientation="vertical"
+        android:id="@+id/card_data_section_read"
+        android:layout_height="wrap_content">
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/image_container_grid_read"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/image_grid_read"
+                android:layout_height="0dp"
+                android:layout_width="0dp"
+                android:adjustViewBounds="true"
+                android:scaleType="center"
+                app:layout_constraintDimensionRatio="H,14:9"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="InvalidId" />
+        </android.support.constraint.ConstraintLayout>
+        <TextView
+            android:text="21/ 10/2015"
+            android:id="@+id/card_date_item_read"
+            android:paddingRight="8dp"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/colorAsh"
+            android:textSize="14sp"
+            android:paddingStart="8dp"
+            android:textAlignment="textEnd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:ignore="RtlSymmetry" />
+        <TextView
+            android:text="Trump 'in good health' despite obesity"
+            android:id="@+id/card_title_item_read"
+            android:textColor="@color/colorDarkAsh"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:paddingLeft="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="8dp"
+            tools:ignore="RtlSymmetry" />
+        <TextView
+            android:text="After a rather significant delay in its development, Crackdown 3 has finally launched on Xbox One consoles and Windows 10 devices. Crackdown 3 is an open-world action title with a campaign (that can be played solo or with another player) and an online multipl… [+2370 chars]"
+            android:id="@+id/card_description_item_read"
+            android:padding="8dp"
+            android:ellipsize="end"
+            android:textColor="@color/colorAsh"
+            android:textStyle="bold"
+            android:maxLines="3"
+            android:textSize="14sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/readmore_read"
+                android:textColor="@color/colorWhite"
+                android:background="@color/colorPrimary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Read More"
+                android:layout_margin="4dp"
+                android:layout_weight="0.5"/>
+            <Button
+                android:id="@+id/share_read"
+                android:textColor="@color/colorWhite"
+                android:background="@color/colorDarkAsh"
+                android:layout_width="wrap_content"
+                android:layout_margin="4dp"
+                android:layout_height="wrap_content"
+                android:text="Share"
+                android:layout_weight="0.5"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    app:cardBackgroundColor="@color/colorWhite"
+    android:clickable="true"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="12dp"
+    android:id="@+id/post_card"
+    android:background="?attr/selectableItemBackground"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:focusable="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="@color/colorWhite"
+        android:orientation="vertical"
+        android:id="@+id/card_data_section"
+        android:layout_height="wrap_content">
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/image_container_grid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/image_grid"
+                android:layout_height="0dp"
+                android:layout_width="0dp"
+                android:adjustViewBounds="true"
+                android:scaleType="center"
+                app:layout_constraintDimensionRatio="H,14:9"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="InvalidId" />
+        </android.support.constraint.ConstraintLayout>
+        <TextView
+            android:text="21/ 10/2015"
+            android:id="@+id/card_date_item"
+            android:paddingRight="8dp"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/colorAsh"
+            android:textSize="12sp"
+            android:paddingStart="8dp"
+            android:textAlignment="textEnd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:ignore="RtlSymmetry" />
+        <TextView
+            android:text="Trump 'in good health' despite obesity"
+            android:id="@+id/card_title_item"
+            android:textColor="@color/colorDarkAsh"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:paddingLeft="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="8dp"
+            tools:ignore="RtlSymmetry" />
+        <TextView
+            android:text="The president is a few pounds heavier and taking a higher dose of cholesterol medicine, his doctor says."
+            android:id="@+id/card_description_item"
+            android:padding="8dp"
+            android:ellipsize="end"
+            android:textColor="@color/colorAsh"
+            android:textStyle="bold"
+            android:maxLines="3"
+            android:textSize="12sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/item_load_more"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="match_parent">
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:indeterminate="true" />
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>
